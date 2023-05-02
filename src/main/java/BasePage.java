@@ -24,8 +24,6 @@ public class BasePage {
     private final By INPUT_REG_DESCRIPTION = By.id("register-description");
     private final By BUTTON_REGISTERCONFIRM = By.xpath("//*[@onclick=\"registerUser()\"]");
     private final By TEXT_REGISTERCONFIRM = By.id("register-alert");
-    private final String USERNAME = "lovasia";
-    private final String PASSWORD = "kispal123";
 
     private final By BUTTON_LOGIN = By.id("login-form-button");
     private final By INPUT_LOGIN_USERNAME = By.id("email");
@@ -45,7 +43,6 @@ public class BasePage {
     private final By BUTTON_CONNECT_WITH_US = By.xpath("//span[@data-text=\"Connect with Us\"]");
 
 
-
     public void navigate() {
         driver.navigate().to(URL);
     }
@@ -54,10 +51,12 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOfElementLocated(BUTTON_TECACCEPT)).click();
     }
+
     public void closeTAC() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOfElementLocated(BUTTON_TECCLOSE)).click();
     }
+
     public boolean isTACVisible() {
         return driver.findElement(WINDOWTAC).isDisplayed();
     }
@@ -103,34 +102,42 @@ public class BasePage {
         driver.findElement(BUTTON_HOME).click();
         return driver.getCurrentUrl();
     }
+
     public String aboutButtonURL() {
         driver.findElement(BUTTON_ABOUT).click();
         return driver.getCurrentUrl();
     }
+
     public String portfolioButtonURL() {
         driver.findElement(BUTTON_PORTFOLIO).click();
         return driver.getCurrentUrl();
     }
+
     public String blogButtonURL() {
         driver.findElement(BUTTON_BLOG).click();
         return driver.getCurrentUrl();
     }
+
     public String contactButtonURL() {
         driver.findElement(BUTTON_CONTACT).click();
         return driver.getCurrentUrl();
     }
+
     public String profileButtonURL() {
         driver.findElement(BUTTON_PROFILE).click();
         return driver.getCurrentUrl();
     }
+
     public String seeOurWorksButtonURL() {
         driver.findElement(BUTTON_SEE_OUR_WORKS).click();
         return driver.getCurrentUrl();
     }
+
     public String connectWithUsButtonURL() {
         driver.findElement(BUTTON_CONNECT_WITH_US).click();
         return driver.getCurrentUrl();
     }
+
     public void goToMainPage() {
         driver.navigate().to(MAINPAGE);
     }

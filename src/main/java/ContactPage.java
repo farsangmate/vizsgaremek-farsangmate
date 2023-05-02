@@ -12,7 +12,7 @@ public class ContactPage extends BasePage {
 
     private final By BUTTON_CONTACT = By.xpath("//*[@data-text=\"Get in touch\"]");
 
-    private final By INPUT_FIRSTNAME =By.id("first-name");
+    private final By INPUT_FIRSTNAME = By.id("first-name");
     private final By INPUT_LASTNAME = By.id("last-name");
     private final By INPUT_EMAIL = By.id("email");
     private final By INPUT_PROJECTTYPE = By.id("projectType");
@@ -20,7 +20,7 @@ public class ContactPage extends BasePage {
     private final By BUTTON_SENDMSG = By.xpath("//*[@onclick=\"myFunction()\"]");
 
 
-    public void fillContact(String firstName,String lastName,String email,String projectType,String aboutProject) {
+    public void fillContact(String firstName, String lastName, String email, String projectType, String aboutProject) {
         driver.findElement(BUTTON_CONTACT).click();
         driver.findElement(INPUT_FIRSTNAME).sendKeys(firstName);
         driver.findElement(INPUT_LASTNAME).sendKeys(lastName);
@@ -29,9 +29,10 @@ public class ContactPage extends BasePage {
         drpProjectType.selectByVisibleText(projectType);
         driver.findElement(INPUT_ABOUTPROYECT).sendKeys(aboutProject);
         Actions action = new Actions(driver);
-        WebElement element =driver.findElement(BUTTON_SENDMSG);
+        WebElement element = driver.findElement(BUTTON_SENDMSG);
         action.doubleClick(element).perform();
     }
+
     public String handleAlertAndGetMsg() {
         String msg = driver.switchTo().alert().getText();
         driver.switchTo().alert().accept();

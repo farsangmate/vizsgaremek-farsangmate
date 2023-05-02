@@ -17,10 +17,10 @@ public class ContactTest extends TestUtilities {
         basePage.acceptTAC();
         basePage.login(VALIDUSERNAME, VALIDPASSWORD);
         ContactPage contactPage = new ContactPage(driver);
-        contactPage.fillContact("Teszt","Elek","tesztelek@gmail.com","Web Design","Everything is beautiful");
+        contactPage.fillContact("Teszt", "Elek", "tesztelek@gmail.com", "Web Design", "Everything is beautiful");
         Thread.sleep(300);
         String actualResult = contactPage.handleAlertAndGetMsg();
         String expectedResult = "Message sent!";
-        Assertions.assertEquals(expectedResult,actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 }

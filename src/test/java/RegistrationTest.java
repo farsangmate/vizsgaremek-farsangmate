@@ -18,6 +18,7 @@ public class RegistrationTest extends TestUtilities {
         String actualResult = basePage.getRegisterText();
         Assertions.assertEquals(MSG_SUCCESFULLREG, actualResult);
     }
+
     @Test
     @Order(2)
     @DisplayName("Regisztráció helytelen adatokkal")
@@ -28,6 +29,7 @@ public class RegistrationTest extends TestUtilities {
         basePage.acceptTAC();
         basePage.register(USERNAMEREG, PASSWORDREG, EMAILREGWRONG, DESCRIPTIONREG);
         String actualResult = basePage.getRegisterText();
+        makeScreenshot("Regisztráció nem megfelelő formátumú email címmel");
         Assertions.assertNotEquals(MSG_SUCCESFULLREG, actualResult);
     }
 
@@ -42,6 +44,7 @@ public class RegistrationTest extends TestUtilities {
         basePage.acceptTAC();
         basePage.register("", "", "", "");
         String actualResult = basePage.getRegisterText();
+        makeScreenshot("Regisztráció üres mezőkkel");
         Assertions.assertNotEquals(MSG_SUCCESFULLREG, actualResult);
     }
 

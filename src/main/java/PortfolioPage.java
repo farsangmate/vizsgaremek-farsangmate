@@ -8,9 +8,6 @@ public class PortfolioPage extends BasePage {
         super(driver);
     }
 
-    //termékek neveinek kiolvasása
-
-    //private final By ITEMS = By.xpath("//*[@class=\"site-project-item\"]");
     private final By ITEMS = By.xpath("//*[@class=\"site-project-item-content\"]");
     private final By BUTTON_NEXT = By.xpath("//*[@aria-label=\"Next\"]");
 
@@ -36,16 +33,5 @@ public class PortfolioPage extends BasePage {
         return itemsName.toArray(new String[0]);
     }
 
-
-    public void scrollToElement(By xpath) throws InterruptedException {
-        WebElement element = driver.findElement(xpath);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        Thread.sleep(500);
-    }
-
-    public boolean lastPage() {
-        String attribute = driver.findElement(BUTTON_NEXT).getAttribute("class");
-        return attribute.equals("page-item disabled");
-    }
 
 }

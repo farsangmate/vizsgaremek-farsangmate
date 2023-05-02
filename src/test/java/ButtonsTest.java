@@ -15,7 +15,7 @@ public class ButtonsTest extends TestUtilities {
     }
 
     @Test
-    @Order(8)
+    @Order(1)
     @DisplayName("Home gomb teszt")
     @Description("A 'Home' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
@@ -26,7 +26,7 @@ public class ButtonsTest extends TestUtilities {
     }
 
     @Test
-    @Order(1)
+    @Order(2)
     @DisplayName("About gomb teszt")
     @Description("Az 'About' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
@@ -37,7 +37,7 @@ public class ButtonsTest extends TestUtilities {
     }
 
     @Test
-    @Order(2)
+    @Order(3)
     @DisplayName("Portfolio gomb teszt")
     @Description("A 'Portfolio' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
@@ -48,7 +48,7 @@ public class ButtonsTest extends TestUtilities {
     }
 
     @Test
-    @Order(3)
+    @Order(4)
     @DisplayName("Blog gomb teszt")
     @Description("A 'Blog' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
@@ -59,7 +59,7 @@ public class ButtonsTest extends TestUtilities {
     }
 
     @Test
-    @Order(4)
+    @Order(5)
     @DisplayName("Get in touch gomb teszt")
     @Description("A 'Get in touch' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
@@ -71,7 +71,7 @@ public class ButtonsTest extends TestUtilities {
     }
 
     @Test
-    @Order(5)
+    @Order(6)
     @DisplayName("Profile gomb teszt")
     @Description("A 'Profile' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
@@ -82,7 +82,7 @@ public class ButtonsTest extends TestUtilities {
     }
 
     @Test
-    @Order(6)
+    @Order(7)
     @DisplayName("Connect With Us gomb teszt")
     @Description("A 'Connect With Us' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
@@ -94,7 +94,7 @@ public class ButtonsTest extends TestUtilities {
     }
 
     @Test
-    @Order(7)
+    @Order(8)
     @DisplayName("See Our Work button teszt")
     @Description("A 'See Our Work' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)

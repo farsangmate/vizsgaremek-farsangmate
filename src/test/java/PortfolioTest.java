@@ -9,17 +9,17 @@ public class PortfolioTest extends TestUtilities {
 
     @Test
     @Order(1)
-    @DisplayName("Termék nevek ellenőrzése")
-    @Description("Termékek kiolvasása az összes oldalról és azok ellenőrzése")
+    @DisplayName("Termékek neveinek ellenőrzése")
+    @Description("Termékek neveinek kiolvasása az összes oldalról és azok ellenőrzése")
     @Severity(SeverityLevel.NORMAL)
     public void testGetProducts() throws InterruptedException {
         basePage.navigate();
         basePage.acceptTAC();
-        basePage.login(VALIDUSERNAME,VALIDPASSWORD);
+        basePage.login(VALIDUSERNAME, VALIDPASSWORD);
         portfolioPage.navigateToPortfolioPage();
         String[] actualResult = portfolioPage.getItemNames();
         String[] expectedResult = {"KIO-TAPE BRAND", "USE-LESS BRAND", "OSEN CLOCK", "SEAMLESS WATCH", "KIO TAPE"};
-        Assertions.assertArrayEquals(expectedResult,actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
 }

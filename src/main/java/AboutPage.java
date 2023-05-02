@@ -13,6 +13,7 @@ public class AboutPage extends BasePage {
     public AboutPage(WebDriver driver) {
         super(driver);
     }
+
     private final By BUTTON_ABOUT = By.xpath("//a[@href=\"https://lennertamas.github.io/roxo/about\"][1]");
     private final By WORKERSCARD = By.xpath("//*[@class=\"site-team-member-content\"]");
 
@@ -22,11 +23,10 @@ public class AboutPage extends BasePage {
         driver.findElement(BUTTON_ABOUT).click();
         try {
             FileWriter myWriter = new FileWriter("description.txt");
-            String text= driver.findElement(TEXT_DESCRIPTION).getText();
+            String text = driver.findElement(TEXT_DESCRIPTION).getText();
             myWriter.write(text);
             myWriter.close();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         List<String> description = new ArrayList<>();
@@ -43,6 +43,7 @@ public class AboutPage extends BasePage {
         }
         return description.toString();
     }
+
     public String[] getNames() throws InterruptedException {
         driver.findElement(BUTTON_ABOUT).click();
         List<WebElement> workerinfos = driver.findElements(WORKERSCARD);
@@ -55,6 +56,7 @@ public class AboutPage extends BasePage {
         }
         return names;
     }
+
     public String[] ReadFromFile() {
         List<String> names = new ArrayList<>();
         try {

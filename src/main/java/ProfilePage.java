@@ -26,6 +26,7 @@ public class ProfilePage extends BasePage {
     public void navigateToProfilePage() {
         driver.findElement(BUTTON_PROFILE).click();
     }
+
     public void modifyProfile(String name, String bio, String phoneNumber) {
         driver.findElement(INPUT_NAME).sendKeys(name);
         driver.findElement(INPUT_BIO).sendKeys(bio);
@@ -34,22 +35,12 @@ public class ProfilePage extends BasePage {
         //driver.navigate().back();
 
     }
+
     public void deleteFields() {
         driver.findElement(INPUT_NAME).clear();
         driver.findElement(INPUT_BIO).clear();
         driver.findElement(INPUT_PHONENUMBER).clear();
     }
-
- /*   public ArrayList<String> getTextFromProfile() {
-        ArrayList<String> inputTexts = new ArrayList<>();
-        //driver.navigate().back();
-        //driver.findElement(BUTTON_PROFILE).click();
-        inputTexts.add(driver.findElement(INPUT_NAME).getText());
-        inputTexts.add(driver.findElement(INPUT_BIO).getText());
-        inputTexts.add(driver.findElement(INPUT_PHONENUMBER).getText());
-
-        return inputTexts;
-        }*/
 
     public boolean isEditSuccessful() {
         return driver.findElement(TEXT_VERIFYSUCCESSFUL).isDisplayed();
@@ -60,9 +51,9 @@ public class ProfilePage extends BasePage {
         String name = driver.findElement(INPUT_NAME).getText();
         String bio = driver.findElement(INPUT_BIO).getText();
         String phonenumber = driver.findElement(INPUT_PHONENUMBER).getText();
-            text.add(name);
-            text.add(bio);
-            text.add(phonenumber);
+        text.add(name);
+        text.add(bio);
+        text.add(phonenumber);
         String[] textArray = text.toArray(new String[0]);
         return textArray;
     }
