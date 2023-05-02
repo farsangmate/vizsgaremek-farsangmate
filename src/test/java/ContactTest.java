@@ -19,9 +19,9 @@ public class ContactTest extends TestUtilities {
         ContactPage contactPage = new ContactPage(driver);
         contactPage.fillContact("Teszt","Elek","tesztelek@gmail.com","Web Design","Everything is beautiful");
         Thread.sleep(300);
+        makeScreenshot("Message sent succesful");
         String actualResult = contactPage.handleAlertAndGetMsg();
         String expectedResult = "Message sent!";
-        makeScreenshot("Message sent succesful");
         Assertions.assertEquals(expectedResult,actualResult);
     }
 }
