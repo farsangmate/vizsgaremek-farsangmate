@@ -54,7 +54,7 @@ public class TestUtilities {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-extensions");
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         options.addArguments("--window-size=1920,1080");
         options.addArguments("start-maximized");
         options.addArguments("--remote-allow-origins=*");
@@ -83,8 +83,8 @@ public class TestUtilities {
         Allure.addAttachment(name, new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
     }
 
-    /*@AfterEach
+    @AfterEach
     public void quit() {
         driver.quit();
-    }*/
+    }
 }

@@ -16,8 +16,8 @@ public class ButtonsTest extends TestUtilities {
 
     @Test
     @Order(8)
-    @DisplayName("Home button test")
-    @Description("Testing if the 'Home' button opens the right page")
+    @DisplayName("Home gomb teszt")
+    @Description("A 'Home' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
     public void testHomeButton() {
         String expectedHomePage = "https://lennertamas.github.io/roxo/landing.html";
@@ -27,8 +27,8 @@ public class ButtonsTest extends TestUtilities {
 
     @Test
     @Order(1)
-    @DisplayName("About button test")
-    @Description("Testing if the 'About' button opens the right page")
+    @DisplayName("About gomb teszt")
+    @Description("Az 'About' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
     public void testAboutButton() {
         String expectedAboutPage = "https://lennertamas.github.io/roxo/about/";
@@ -38,8 +38,8 @@ public class ButtonsTest extends TestUtilities {
 
     @Test
     @Order(2)
-    @DisplayName("Portfolio button test")
-    @Description("Testing if the 'Porfolio' button opens the right page")
+    @DisplayName("Portfolio gomb teszt")
+    @Description("A 'Portfolio' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
     public void testPortfolioButton() {
         String expectedPortfolioPage = "https://lennertamas.github.io/roxo/portfolio/";
@@ -49,8 +49,8 @@ public class ButtonsTest extends TestUtilities {
 
     @Test
     @Order(3)
-    @DisplayName("Blog button test")
-    @Description("Testing if the 'Blog' button opens the right page")
+    @DisplayName("Blog gomb teszt")
+    @Description("A 'Blog' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
     public void testBlogButton() {
         String expectedBlogPage = "https://lennertamas.github.io/roxo/blog/";
@@ -60,8 +60,8 @@ public class ButtonsTest extends TestUtilities {
 
     @Test
     @Order(4)
-    @DisplayName("Get in touch button test")
-    @Description("Testing if the 'Get in touch' button opens the right page")
+    @DisplayName("Get in touch gomb teszt")
+    @Description("A 'Get in touch' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
     public void testContactButton() {
         String expectedContactPage = "https://lennertamas.github.io/roxo/contact/";
@@ -72,8 +72,8 @@ public class ButtonsTest extends TestUtilities {
 
     @Test
     @Order(5)
-    @DisplayName("Profile button test")
-    @Description("Testing if the 'Profile' button opens the right page")
+    @DisplayName("Profile gomb teszt")
+    @Description("A 'Profile' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
     public void testProfileButton() {
         String expectedProfilePage = "https://lennertamas.github.io/roxo/profile";
@@ -83,8 +83,8 @@ public class ButtonsTest extends TestUtilities {
 
     @Test
     @Order(6)
-    @DisplayName("Connect With Us button test")
-    @Description("Testing if the 'Connect With Us' button opens the right page")
+    @DisplayName("Connect With Us gomb teszt")
+    @Description("A 'Connect With Us' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
     public void testConnectWithUs() {
         String expectedContactPage = "https://lennertamas.github.io/roxo/contact/";
@@ -95,8 +95,8 @@ public class ButtonsTest extends TestUtilities {
 
     @Test
     @Order(7)
-    @DisplayName("See Our Work button test")
-    @Description("Testing if the 'See Our Work' button opens the right page")
+    @DisplayName("See Our Work button teszt")
+    @Description("A 'See Our Work' gomb megfelelő oldalra vezet")
     @Severity(SeverityLevel.NORMAL)
     public void testSeeOurWorkButton() {
         String expectedPortfolioPage = "https://lennertamas.github.io/roxo/portfolio/";
