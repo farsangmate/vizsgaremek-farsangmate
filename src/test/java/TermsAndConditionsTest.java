@@ -16,6 +16,7 @@ public class TermsAndConditionsTest extends TestUtilities {
     @Severity(SeverityLevel.NORMAL)
     public void testTermsAndConditions() {
         basePage.navigate();
+        makeScreenshot("'Terms and Conditions' felugró ablak megjelenik");
         Assertions.assertTrue(basePage.isTACVisible());
     }
 
