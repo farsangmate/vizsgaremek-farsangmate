@@ -39,4 +39,4 @@ Tesztelt weboldal: https://lennertamas.github.io/roxo/
 
 Tesztesetek: https://docs.google.com/spreadsheets/d/1p7NjuMXfB597E94r-QhfMN1YloVPyH4e/edit#gid=1856098779
 
-Allure report: https://farsangmate.github.io/farsangmate-vizsgaremek/6/
+Allure report: https://farsangmate.github.io/vizsgaremek-farsangmate/6/
